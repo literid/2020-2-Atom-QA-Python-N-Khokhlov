@@ -6,7 +6,7 @@ def test_keys_addressing():
     assert dict1["a"] == 1
     assert dict1["c"] == 3
     with pytest.raises(KeyError):
-        assert dict1["d"]
+        dict1["d"]
     dict1["a"] = -1
     assert dict1 == {"a": -1, "b": 2, "c": 3}
     dict2 = {"a": 1, "b": 2}

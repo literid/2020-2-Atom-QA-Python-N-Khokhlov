@@ -15,7 +15,7 @@ class TestIndexAssign:
         expected_list = [-1, 1, 2, -1, 4, 5, 6, 7, 8, -1]
         assert new_list == expected_list
         with pytest.raises(IndexError):
-            assert new_list[10]
+            new_list[10]
 
     def test_negative_index(self, new_list):
         new_list[-1] = -1
@@ -24,7 +24,7 @@ class TestIndexAssign:
         expected_list = [-1, 1, 2, 3, 4, 5, 6, -1, 8, -1]
         assert new_list == expected_list
         with pytest.raises(IndexError):
-            assert new_list[-11]
+            new_list[-11]
 
 
 def test_append(new_list):

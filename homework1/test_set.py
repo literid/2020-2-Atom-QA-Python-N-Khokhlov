@@ -31,7 +31,7 @@ def test_remove():
     assert set2 == {1, 3, 4}
     set3 = {1, 2, 3, 4}
     with pytest.raises(KeyError):
-        assert set3.remove(5)
+        set3.remove(5)
 
 
 class TestJoinMethods:
